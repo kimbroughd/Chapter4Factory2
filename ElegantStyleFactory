@@ -1,8 +1,8 @@
 public class ElegantStyleFactory extends StyleFactory {
         
-        public String createDocument(String documentName) {
-                Document doc = prepareDocument(documentName);
-                doc.setType("ElegantStyle");
+        public String createDocument(String documentType) {
+                Document doc = prepareDocument(documentType);
+                doc.setStyle("ElegantStyle");
                 return doc;
         }
 }
