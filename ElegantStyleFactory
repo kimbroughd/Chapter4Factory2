@@ -1,6 +1,8 @@
-public class ElegantStyleFactory implements StyleFactory {
+public class ElegantStyleFactory extends StyleFactory {
         
-        public String createDocument(name) {
-                return new Document();
+        public String createDocument(String documentName) {
+                Document doc = prepareDocument(documentName);
+                doc.setType("ElegantStyle");
+                return doc;
         }
 }
