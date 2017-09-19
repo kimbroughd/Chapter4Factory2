@@ -1,13 +1,14 @@
 public abstract class Document {
-        String name;
         String type;
+        String style;
         
-        public Document(String documentName) {
-                name = documentName;
+        public Document(String documentType) {
+                type = documentType;
         }
-        public void setType(String type) {
-              this.type = type;
+        public void setStyle(String style) {
+              this.style = style;
         }
-        public void change() {
-                System.out.println("Document " + name + " changed.")
+        public void process() {
+                System.out.println(style + type + " '" + name + "' processed.")
+        }
  }
