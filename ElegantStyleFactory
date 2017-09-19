@@ -1,0 +1,6 @@
+public class ElegantStyleFactory implements StyleFactory {
+        
+        public String createDocument(name) {
+                return new Document();
+        }
+}
