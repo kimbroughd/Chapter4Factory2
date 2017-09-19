@@ -1,10 +1,10 @@
 public class TestDocument {
         public static void main(String[] args) {
-                StyleFactory elegantFact = new ElegantStyleFactory();
+                StyleFactory fancyFact = new FancyStyleFactory();
                 
-                Document let = elegantFact.createDocument("Letter");
+                Document let = fancyFact.createDocument("Letter");
                 
                 let.open();
-                elegantFact.process(let);
+                fancyFact.process(let);
         }
 }
